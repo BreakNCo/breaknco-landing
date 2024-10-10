@@ -82,7 +82,11 @@ a:focus {
 p {
   margin: 0 0 20px;
 }
-h1,
+h1 {
+  line-height: 1.2;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
 h2,
 h3,
 h4,
