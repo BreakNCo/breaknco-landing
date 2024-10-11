@@ -9,11 +9,11 @@
     "lint:css": "stylelint css/",
     "lint:css:fix": "stylelint css/ --fix",
     "start": "yarn server",
-    "server": "sirv --dev --no-clear --port 3000",
+    "server": "lite-server",
     "test": "yarn lint:css"
   },
   "devDependencies": {
-    "sirv-cli": "^2.0.2",
+    "lite-server": "^2.6.1",
     "stylelint": "^16.9.0",
     "stylelint-config-twbs-bootstrap": "^15.0.0"
   }
