@@ -40,7 +40,7 @@ jobs:
           registry-url: https://registry.npmjs.org
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --production --frozen-lockfile
 
       # No need to build the project for now since we're deploying static content
       # - name: Build project
