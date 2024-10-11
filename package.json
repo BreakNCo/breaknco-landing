@@ -6,14 +6,22 @@
   "repository": "https://github.com/BreakNCo/breaknco-landing",
   "license": "MIT",
   "scripts": {
+    "build": "yarn minify:css",
     "lint:css": "stylelint css/",
     "lint:css:fix": "stylelint css/ --fix",
-    "start": "yarn server",
+    "minify:css": "postcss css/styles.css -o css/styles.min.css",
+    "start": "npm-run-all --parallel watch server",
+    "watch": "nodemon -e html,js,css -x \"yarn minify:css\" --delay 4",
     "server": "lite-server",
     "test": "yarn lint:css"
   },
   "devDependencies": {
+    "cssnano": "^7.0.6",
     "lite-server": "^2.6.1",
+    "nodemon": "^3.1.7",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
     "stylelint": "^16.9.0",
     "stylelint-config-twbs-bootstrap": "^15.0.0"
   }
