@@ -1,0 +1,15 @@
+{
+  "name": "breaknco-landing",
+  "description": "BreakNCo Landing Page",
+  "version": "0.0.1",
+  "private": true,
+  "repository": "https://github.com/BreakNCo/breaknco-landing",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn server",
+    "server": "sirv --dev --no-clear --port 3000"
+  },
+  "devDependencies": {
+    "sirv-cli": "^2.0.2"
+  }
+}
