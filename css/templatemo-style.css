@@ -550,6 +550,24 @@ a#logo {
   background-color: #fff;
   color: #1e1e1e;
 }
+.services-list .item a:link {
+  text-decoration: none;
+}
+
+.services-list .item a:visited {
+  text-decoration: none;
+}
+
+.services-list .item a:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #1e1e1e;
+}
+
+.services-list .item a:active {
+  text-decoration: none;
+}
+
 .service-box h3 {
   font-size:22px;
   font-weight:700;
