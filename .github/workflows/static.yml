@@ -51,10 +51,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload build output, excluding node_modules
-          path: |
-            .
-            !node_modules/**
+          # Upload build output
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
