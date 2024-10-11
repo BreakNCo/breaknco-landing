@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "lint:css": "stylelint css/",
+    "lint:css:fix": "stylelint css/ --fix",
     "start": "yarn server",
     "server": "sirv --dev --no-clear --port 3000",
     "test": "yarn lint:css"
