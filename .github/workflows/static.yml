@@ -42,8 +42,9 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build project
-        run: yarn build
+      # No need to build the project for now since we're deploying static content
+      # - name: Build project
+      #   run: yarn build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
