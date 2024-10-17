@@ -594,6 +594,16 @@ a#logo {
   background: #fff;
 }
 
+/* Comment this out when more than 3 items */
+.owl-stage-outer {
+  display: -webkit-box;
+  display: flex;
+  display: flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 /* ==============================================
 07. WORK BLOCK CSS
 ================================================ */

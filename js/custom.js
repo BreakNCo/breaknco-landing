@@ -78,7 +78,7 @@
         }
         if ($('.services-list').length) {
             $('.services-list').owlCarousel({
-                loop: true,
+                loop: false,    // make it true if more than 3 elements
                 nav: false,
                 dots: true,
                 items: 3,
@@ -105,7 +105,12 @@
                     }
                 }
             });
-        }
+        } 
+        // else if (itemCount === 1) {
+        //     // If only one item, just show it without the carousel
+        //     $('.services-list').css('display', 'block'); // Or use another method to show the item
+        // }
+        
         if ($('.gallery-list').length) {
             $('.gallery-list').owlCarousel({
                 loop: false,
